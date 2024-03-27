@@ -54,7 +54,7 @@ function WeatherAppMain() {
 
   const fetchData = async (city) => {
     const response = await axios.get(
-      `http://api.weatherapi.com/v1/forecast.json?key=f1b20c8dcfb048488e1230001231010&q=${city}&days=3&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=f1b20c8dcfb048488e1230001231010&q=${city}&days=3&aqi=no&alerts=no`
     );
     setData(response.data);
     initialLocalTime.current = response.data;
